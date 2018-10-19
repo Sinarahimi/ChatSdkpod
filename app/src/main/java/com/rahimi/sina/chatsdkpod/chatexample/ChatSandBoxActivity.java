@@ -100,7 +100,7 @@ public class ChatSandBoxActivity extends AppCompatActivity implements AdapterVie
 //    private static String name = "Alexi";
     private String fileUri;
     private static String name = "SandBox";
-    private static String TOKEN = "7429edbd89814f11b1fd4569185c699f";
+    private static String TOKEN = "625cf6a40653417b9b2dff348b8e48be";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -548,7 +548,7 @@ public class ChatSandBoxActivity extends AppCompatActivity implements AdapterVie
                 break;
             case 7:
                 //"get thread participant",
-                presenter.getThreadParticipant(10, 0L, 661, new ChatHandler() {
+                presenter.getThreadParticipant(10, 0L, 107, new ChatHandler() {
                     @Override
                     public void onGetThreadParticipant(String uniqueId) {
                         super.onGetThreadParticipant(uniqueId);
@@ -599,7 +599,7 @@ public class ChatSandBoxActivity extends AppCompatActivity implements AdapterVie
                 break;
             case 10:
                 //"mute thread",
-                presenter.muteThread(543, new ChatHandler() {
+                presenter.muteThread(107, new ChatHandler() {
                     @Override
                     public void onMuteThread(String uniqueId) {
                         super.onMuteThread(uniqueId);
